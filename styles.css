@@ -1,0 +1,85 @@
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+#clearall{
+	margin: 10px;
+	height: 100vh;
+	width: 100vw;
+	margin: auto;
+	background-color: #2e213d;
+  	text-align: center;
+}
+
+#sky{
+	height: 100%;
+	width: 100%;
+  	background-color: transparent;
+
+ 
+}
+.moon{
+  position: absolute;
+  right: 110px;
+  top: 60px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+    
+.crescent{
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  height: 38px;
+  width: 38px;
+  border-radius: 50%;
+  background-color: #2e213d;
+ }
+
+
+
+span{
+  display: inline-block;
+  text-align: center;
+  font-size: 48px; 
+  direction: rtl;
+  color: #ff8900;
+  margin-top: 100px;
+  position: relative;
+  z-index: 1;
+}
+
+/* #clearall{ */
+/* 	height: 800px; */
+
+/* } */
+
+span i:hover{
+	color: #2C98F0;
+}
+
+
+.b1icon:hover ~ i{
+		color: #2C98F0;
+}
+
+.b2icon:hover ~ i{
+		color: #2C98F0;
+}
+
+.b3icon:hover ~ i{
+		color: #2C98F0;
+}
+
+.b4icon:hover ~ i{
+		color: #2C98F0;
+}
+
+.b5icon:hover ~ i{
+		color: #2C98F0;
+}
+
+
