@@ -1,3 +1,45 @@
+window.onload = function (){  
+  createStars();
+};
+
+
+var moonStr = 'moon';
+var newMoonStr = '';
+
+
+
+window.addEventListener('keydown', (keyPress) => {
+
+  newMoonStr = newMoonStr + keyPress.key;
+ 
+  if(moonStr.startsWith(newMoonStr)){
+    if( newMoonStr == moonStr){
+    document.getElementById("moon").style.display = 'block';
+  }
+  }  else{
+    newMoonStr = '';
+  }
+
+
+
+  // if( moonArray == moonStr){
+  //   document.getElementById("moon").style.display;
+  // }
+
+
+});
+
+ 
+
+document.addEventListener("click", function(clear){
+    var moonElement = document.getElementById("moon"),
+    removeMoon = clear.target;
+    if(removeMoon ==  moonElement){
+      document.getElementById("moon").style.display = 'none';
+    }
+})
+
+
 function resetRanking() {
   console.log("reset");
   document.getElementById("icon5").style.color = "";
@@ -28,11 +70,7 @@ document.addEventListener("click", function(evt) {
 });
 
 
-window.onload = function (){  
-createStars();
 
-
-};
 
   function createStars() {
     var spawnStars = document.getElementById("sky");
@@ -42,10 +80,10 @@ createStars();
       var randSize = 1 + Math.random() * 3;
       var star = document.createElement("div");
 
-      star.className = "star";
+      // star.className = "star";
       star.style.position = "absolute";
-      star.style.left = Math.random() * 100 + "%";
-      star.style.top = Math.random() * 100 + "%";
+      star.style.left = Math.random() * 99 + "%";
+      star.style.top = Math.random() * 99 + "%";
       star.style.backgroundColor = "#fff";
       star.style.height = randSize + "px";
       star.style.width = randSize + "px";
